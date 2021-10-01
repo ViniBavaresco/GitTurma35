@@ -16,5 +16,6 @@ public class Exercicio4JavaE {
 		System.out.println("O valor de R é: "+r);
 		System.out.println("O valor de S é: "+s);
 		System.out.println("O valor de D é: "+d);
+		leia.close();
 	}
 }

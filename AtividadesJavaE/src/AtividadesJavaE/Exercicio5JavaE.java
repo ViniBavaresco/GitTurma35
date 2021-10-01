@@ -19,5 +19,6 @@ public class Exercicio5JavaE {
 		else {
 			System.out.println("Sinto muito, você ficou de recuperação:(");
 		}	
+		leia.close();
 	}
 }
