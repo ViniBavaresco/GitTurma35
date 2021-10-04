@@ -1,4 +1,4 @@
-package AtividadesJavaE;
+package JavaProgramacaoSequencial;
 import java.util.Scanner;
 public class Exercicio3JavaE {
 	public static void main(String[] args) {
