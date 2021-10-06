@@ -7,6 +7,7 @@ public class Exercicio3JavaE {
 		while(idade!=(-99)) {
 			System.out.printf("Digite a sua idade: ");
 			idade= leia.nextInt();
+			System.out.println("('-99' para SAIR)\n");
 			if(idade<21&&idade>=0) {
 				soma21++;
 			}

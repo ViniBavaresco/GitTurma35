@@ -2,8 +2,8 @@ package JavaLacosDeRepeticao;
 import java.util.Scanner;
 public class Exercicio2JavaE {
 	public static void main(String[] args) {
-		int numero,par=0,impar=0,contagem=0;
 		Scanner leia = new Scanner(System.in);
+		int numero,par=0,impar=0,contagem=0;
 		for(contagem=0;contagem<10;contagem++) {
 		System.out.printf("Digite o "+(contagem+1)+"º número: ");
 		numero = leia.nextInt();
