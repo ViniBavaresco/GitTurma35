@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercicio1JavaE {	
 	public static void main(String[] args) {
 		Scanner leia = new Scanner (System.in);
-		double n1, n2, n3, c3=0;
+		double n1, n2, n3, c3 = 0;
 		System.out.println("Digite o 1º número: ");
 		n1 = leia.nextDouble();
 		System.out.println("Digite o 2º número: ");
@@ -19,6 +19,7 @@ public class Exercicio1JavaE {
 		else if (n3>n1 && n3>n2) {
 			c3=n3;
 		}
+		
 		System.out.println("O maior desses números é: "+c3);
 		leia.close();
 	}
