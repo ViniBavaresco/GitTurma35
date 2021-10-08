@@ -1,12 +1,10 @@
 package JavaHerancaPolimorfismo;
-public class Cachorro extends Animal {
-		
+public class CavaloEx1 extends AnimalEx1{
+	
 		void correr(){
 			System.out.println(getNome() + " está correndo");
 		}
-		void latir() {
-			System.out.println("AuAu..Au...");
+		void relinchar() {
+			System.out.println("iiirrrrí");
 		}
-		
-
 }

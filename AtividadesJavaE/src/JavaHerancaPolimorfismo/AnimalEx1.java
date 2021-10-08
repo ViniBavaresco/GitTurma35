@@ -1,5 +1,5 @@
 package JavaHerancaPolimorfismo;
-public class Animal {
+public class AnimalEx1 {
 		private String nome;
 		private int idade;
 		
