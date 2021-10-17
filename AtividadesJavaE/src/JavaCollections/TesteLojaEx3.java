@@ -5,8 +5,8 @@ public class TesteLojaEx3 {
 	public static void main(String[] args) throws InterruptedException {
 		Scanner leia = new Scanner(System.in);
 		ArrayList<LojaEx3> estoque = new ArrayList<>();
-		int contador;
-		String nomeLoja, resposta;
+		int contador, quantidadeItem;
+		String nomeLoja, resposta, item;
 		
 		System.out.print("\nQual o nome da loja? ");
 		nomeLoja = leia.nextLine();
@@ -14,17 +14,16 @@ public class TesteLojaEx3 {
 		System.out.print("Qual a quantidade de itens a ser digitados? ");
 		contador = leia.nextInt();
 		
-		System.out.println("\n\n=====Gerenciamento de estoque da loja "+nomeLoja+"=====");
+		System.out.println("\n=====Gerenciamento de estoque da loja "+nomeLoja+"=====");
 		
 		for(int inicio=0;inicio<contador;inicio++) {
 			System.out.print("Digite o item em estoque: ");
-			String item = leia.next();
+			item = leia.next();
 			
 			System.out.print("Digite a quantidade desse item em estoque: ");
-			int quantidadeItem = leia.nextInt();
+			quantidadeItem = leia.nextInt();
 			
 			estoque.add(new LojaEx3 (item , quantidadeItem));
-			
 		}
 		
 		System.out.println("\n\n==========Estoque da loja  " + nomeLoja + "==========");
@@ -44,7 +43,7 @@ public class TesteLojaEx3 {
 				for(int inicio = 0; inicio < estoque.size(); inicio++) {
 					System.out.println((inicio+1) + "º " + estoque.get(inicio));
 				}
-				System.out.println("\nDeseja remover outro item?");
+				System.out.println("\nDeseja remover outro item? [Sim/Não]");
 				resposta=leia.next();
 			}
 			else if (resposta.equals("Não")||resposta.equals("NÃO")||resposta.equals("não")) {
