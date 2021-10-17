@@ -36,7 +36,7 @@ public class TesteLojaEx3 {
 		while(resposta.equals("Sim")||resposta.equals("sim")||resposta.equals("SIM")
 				||resposta.equals("Não")||resposta.equals("NÃO")||resposta.equals("não")) {
 			if (resposta.equals("Sim")||resposta.equals("sim")||resposta.equals("SIM")) {
-				System.out.println("Qual a posição do(s) item(ns) que desejaria remover? [Apenas o número, exemplo: 8]");
+				System.out.println("Qual a posição do item que desejaria remover? [Apenas o número, exemplo: 8]");
 				int numeroRemover = leia.nextInt();
 				estoque.remove(numeroRemover-1);
 				System.out.println("\n\n==========Estoque atualizado da loja " + nomeLoja + "==========");
