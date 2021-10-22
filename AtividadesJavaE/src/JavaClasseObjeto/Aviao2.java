@@ -1,4 +1,4 @@
-package JavaClasseObjeto; // teste
+package JavaClasseObjeto; 
 public class Aviao2 {
 		private String empresa;
 		private String cor;
