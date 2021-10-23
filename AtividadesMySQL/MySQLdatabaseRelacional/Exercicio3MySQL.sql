@@ -1,5 +1,4 @@
-/*
-	Atividade 3
+/*Atividade 3
 		Crie um banco de dados para um registro de uma escola, onde o sistema trabalhará 
         com as informações dos estudantes deste registro dessa escola.
 		Crie uma tabela estudantes e utilizando a habilidade de abstração e determine 5 
@@ -12,21 +11,13 @@
         
 		Ao término atualize um dado desta tabela através de uma query de atualização.
 		salve as querys para cada uma dos requisitos o exercício em um arquivo .SQL 
-        ou texto e coloque no seu GitHuB pessoal e compartilhe esta atividade.
-*/
+        ou texto e coloque no seu GitHuB pessoal e compartilhe esta atividade.*/
 
-create database escola;
-use escola; 
-
-/*
-	tb_alunes >>> id, nome, dt_nasc, 
+/*tb_alunes >>> id, nome, dt_nasc, 
 				  turma(Python, Java, Pascal), 
-                  formato(R, P), nota, status (True, False)
-*/
-
-create database escola;
-use escola;
-
+                  formato(R, P), nota, status (True, False)*/
+create database db_escola;
+use db_escola; 
 create table tb_alunes(
 	id_alune bigint(4) auto_increment, -- 9999
 	nome varchar (30) not null,
@@ -43,18 +34,18 @@ desc tb_alunes;
 describe tb_alunes;
 
 insert into tb_alunes(nome, dt_nasc, turma, formato, nota, stt) 
-	      Values ("Maria", "1990-10-01", "Python", "R", 10.0, true),
-	             ("Jubileu", "2000-09-12", "Python", "P", 4.5, true),
-				 ("Juquinha", "2005-12-01", "Java", "R", 8.4, true),
-                 ("Sebastiana", "1958-01-01", "Pascal" ,"P", 9.0, true),                    
-				 ("Ebony",  "1990-11-01", "Python", "R", 5.4, false),
-                 ("Cris", "1978-10-28", "Pascal", "P", 3.3, true),
-		         ("Magali", "1946-07-21", "Pascal", "P", 9.1, false),
+	      Values ("Mario", "1990-10-01", "Python", "R", 10.0, true),
+	             ("Junior", "2000-09-12", "Python", "P", 4.5, true),
+				 ("Lucas", "2005-12-01", "Java", "R", 8.4, true),
+                 ("Sabrina", "1958-01-01", "Pascal" ,"P", 9.0, true),                    
+				 ("Gustavo",  "1990-11-01", "Python", "R", 5.4, false),
+                 ("Cristina", "1978-10-28", "Pascal", "P", 3.3, true),
+		         ("Margarete", "1946-07-21", "Pascal", "P", 9.1, false),
 		         ("Betina", "2015-08-30", "Python", "R", 5.9, true);
 
 select * from tb_alunes;
 select * from tb_alunes where nota > 7;
-select * from tb_alunes where nota <= 7 and nota => 5;
+select * from tb_alunes where nota <= 7 and nota >= 5;
 select * from tb_alunes where nota < 5;
 
 
