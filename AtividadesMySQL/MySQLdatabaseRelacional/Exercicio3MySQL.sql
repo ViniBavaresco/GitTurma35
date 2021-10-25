@@ -48,7 +48,6 @@ select * from tb_alunes where nota > 7;
 select * from tb_alunes where nota <= 7 and nota >= 5;
 select * from tb_alunes where nota < 5;
 
-
 select nome, nota from tb_alunes;
 select nome as 'Nome do Alune', date_format(dt_nasc, '%d/%m/%Y') 
 as 'Data de nascimento' from tb_alunes;
