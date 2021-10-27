@@ -63,4 +63,4 @@ select * from tb_produto WHERE preco > 50;
 select * from tb_produto WHERE preco between 3 and 60;
 select * from tb_produto WHERE nome like "C%";
 select * from tb_produto inner join tb_categoria on tb_categoria.id_categoria = tb_produto.fk_categoria;
-select * from tb_produto inner join tb_categoria on tb_categoria.id_categoria = tb_produto.fk_categoria where tipo_material = "Alvenaria";
+select * from tb_produto inner join tb_categoria on tb_categoria.id_categoria = tb_produto.fk_categoria where tb_categoria.tipo_material = "Alvenaria";
