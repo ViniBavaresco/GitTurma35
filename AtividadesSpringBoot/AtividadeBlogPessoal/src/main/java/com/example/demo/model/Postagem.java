@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 
 @Entity 
 @Table (name ="tb_postagem")
-public class postagem {
+public class Postagem {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class postagem {
 	
 	@NotNull
 	@Size(min = 5, max = 100)
-	private String título;
+	private String titulo;
 	
 	@NotNull
 	@Size(min = 5, max = 100)
@@ -38,10 +38,10 @@ public class postagem {
 		this.id = id;
 	}
 	public String getTitulo() {
-		return título;
+		return titulo;
 	}
 	public void setTitulo(String titulo) {
-		this.título = titulo;
+		this.titulo = titulo;
 	}
 	public String getTexto() {
 		return texto;
