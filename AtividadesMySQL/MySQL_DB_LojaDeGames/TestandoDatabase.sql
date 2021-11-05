@@ -1,0 +1,1 @@
+SELECT  nome as "Nome do Produto", plataforma as "Plataforma", marca as "Marca", ano as "Ano de lançamento",  preco as "Preço",  tipo as "Tipo do Produto" FROM tb_produto inner join tb_categoria on tb_produto.categoria_id=tb_categoria.id;
