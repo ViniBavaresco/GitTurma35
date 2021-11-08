@@ -8,6 +8,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -30,9 +31,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 		private String marca;
 		
 		@NotNull
+		@Positive(message = "O preço do produto deve ser positivo")
 		private double preco;
 		
 		@NotNull
+		@Positive(message = "O ano do produto deve ser positivo")
 		private int ano;
 		
 		@ManyToOne
