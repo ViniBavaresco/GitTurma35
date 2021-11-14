@@ -26,7 +26,7 @@ public class Usuario {
 	private String usuario;
 
 	@NotBlank(message = "Valor não pode ser nulo")
-	@Size(min = 5, max = 80, message = "A senha deve ter entre 5 e 80 caracteres, com letras e números")
+	@Size(min = 5, message = "A senha deve ter entre 5 e 80 caracteres, com letras e números")
 	private String senha;
 
 	public long getId() {
